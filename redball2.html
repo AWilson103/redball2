@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>Red Ball Part 1</title>
+<script src="http://lrn.icstars.org/redball.js"></script>
+<script>
+function sayHello()
+{
+alert("hello Andrew Wilson");
+}
+
+
+function moveleft()
+{
+redball.left=redball.left - 5
+}
+
+function moveright()
+{
+redball.left=redball.left + 5
+}
+
+function moveup()
+{
+redball.top=redball.top - 5
+}
+function movedown()
+{
+redball.top=redball.top + 5
+}
+
+
+function movesquare()
+{
+moveright()
+moveright()
+moveright()
+moveright()
+moveright()
+moveright()
+moveright()
+movedown()
+movedown()
+movedown()
+movedown()
+movedown()
+movedown()
+movedown()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveleft()
+moveup()
+moveup()
+moveup()
+moveup()
+moveup()
+moveup()
+moveup()
+}
+
+function movetriangle()
+{
+moveup(); moveright();
+moveup(); moveright();
+moveup(); moveright();
+moveup(); moveright();
+moveup(); moveright();
+moveup(); moveright();
+moveup(); moveright();
+moveup(); moveright();
+movedown(); moveright();
+movedown(); moveright();
+movedown(); moveright();
+movedown(); moveright();
+movedown(); moveright();
+movedown(); moveright();
+movedown(); moveright();
+movedown(); moveright();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+}
+
+
+</script>
+
+</head>
+
+<body>
+<button onclick="sayHello();">hello world</button>
+<button onclick="moveleft();">moveleft</button>
+<button onclick="moveright();">moveright</button>
+<button onclick="movesquare();">movesquare</button>
+<button onclick="movetop();">movetop</button>
+<button onclick="movedown();">movedown</button>
+<button onclick="movediamond();">movediamond</button>
+<button onclick="movetriangle();">movetriangle</button>
+
+<img src="redball.jpg" id="redball"/>
+</body>
+</html>
